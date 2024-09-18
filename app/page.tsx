@@ -14,7 +14,7 @@ export default function Home() {
       <header className="text-left mb-8">
         <h1 className="text-gray-600 text-center text-3xl font-bold">HOTEL GARDEEN</h1>
         <p className="text-gray-600 text-center mt-2">
-          Bienvenidos a HOTEL GARDEEN tenemos diferentes tipos de habitaciones para ti, echa un vistazo y haz tu reservación.
+        Welcome to HOTEL GARDEEN! We offer different types of rooms for you. Take a look and make your reservation.
         </p>
       </header>
 
@@ -25,17 +25,18 @@ export default function Home() {
             alt="Habitación sencilla"
             className="w-full h-40 rounded-md object-cover mb-4"
           />
-          <h2 className="text-gray-600 text-lg font-medium">Habitación sencilla</h2>
-          <p className="text-gray-500">Esta habitación cuenta con una cama sencilla, baño, sofá, televisor, armario y escritorio.</p>
+          <h2 className="text-gray-600 text-lg font-medium">Single Room</h2>
+          <p className="text-gray-500">This room includes a single bed, bathroom, sofa, TV, wardrobe, and desk.</p>
           <div className="flex justify-between items-center mt-4">
             <button
               onClick={handleReservationClick}
               className="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600"
             >
-              Reservar
+            Reserve
             </button>
-          </div>
-        </article>
+            </div>
+          </article>
+
 
         <article className="bg-white rounded-lg shadow p-6 text-left">
           <img
@@ -43,17 +44,17 @@ export default function Home() {
             alt="Habitación sencilla"
             className="w-full h-40 rounded-md object-cover mb-4"
           />
-          <h2 className="text-gray-600 text-lg font-medium">Habitación doble</h2>
-          <p className="text-gray-500">Esta habitación cuenta con 2 camas sencillas, baño, sofá, televisor, armario y 2 escritorios.</p>
+          <h2 className="text-gray-600 text-lg font-medium">Double Room</h2>
+          <p className="text-gray-500">This room includes 2 single beds, a bathroom, sofa, TV, wardrobe, and 2 desks.</p>
           <div className="flex justify-between items-center mt-4">
-            <button
-              onClick={handleReservationClick}
-              className="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600"
+          <button
+            onClick={handleReservationClick}
+            className="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600"
             >
-              Reservar
+            Reserve
             </button>
-          </div>
-        </article>
+            </div>
+          </article>
 
         <article className="bg-white rounded-lg shadow p-6 text-left">
           <img
@@ -61,17 +62,18 @@ export default function Home() {
             alt="Habitación sencilla"
             className="w-full h-40 rounded-md object-cover mb-4"
           />
-          <h2 className="text-gray-600 text-lg font-medium">Casa Familiar</h2>
-          <p className="text-gray-500">Esta casa tiene disponivilidad para 6 personas , cuanta con 2 habitaciones dobles , 3 baños, 1 cocina, sala de reunion y patio.</p>
+          <h2 className="text-gray-600 text-lg font-medium">Family House</h2>
+          <p className="text-gray-500">This house accommodates up to 6 people, featuring 2 double bedrooms, 3 bathrooms, 1 kitchen, a meeting room, and a patio.</p>
           <div className="flex justify-between items-center mt-4">
-            <button
-              onClick={handleReservationClick}
-              className="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600"
-            >
-              Reservar
-            </button>
+          <button
+          onClick={handleReservationClick}
+          className="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600"
+          >
+          Reserve
+          </button>
           </div>
         </article>
+
 
         <article className="bg-white rounded-lg shadow p-6 text-left">
           <img
@@ -79,15 +81,15 @@ export default function Home() {
             alt="Habitación sencilla"
             className="w-full h-40 rounded-md object-cover mb-4"
           />
-          <h2 className="text-gray-600 text-lg font-medium">Habitación con camarotes</h2>
-          <p className="text-gray-500">Esta habitación cuenta con 1 camarote, baño, sofá, televisor, armario y 2 escritorios, capacidad de habitacion para 2 personas.</p>
+          <h2 className="text-gray-600 text-lg font-medium">Bunk Bed Room</h2>
+          <p className="text-gray-500">This room includes 1 bunk bed, a bathroom, sofa, TV, wardrobe, and 2 desks, with a capacity for 2 people.</p>
           <div className="flex justify-between items-center mt-4">
-            <button
-              onClick={handleReservationClick}
-              className="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600"
-            >
-              Reservar
-            </button>
+          <button
+          onClick={handleReservationClick}
+          className="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600"
+          >
+          Reserve
+          </button>
           </div>
         </article>
       </section>

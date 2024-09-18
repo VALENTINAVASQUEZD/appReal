@@ -9,7 +9,6 @@ const [email, setEmail] = useState('');
 const [date, setDate] = useState('');
 const router = useRouter();
 
-
 useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     setName(params.get('name') || '');
@@ -20,33 +19,34 @@ useEffect(() => {
 return (
     <main className="p-6 bg-green-300 min-h-screen flex flex-col items-center justify-center">
     <header className="text-center mb-8">
-        <h1 className="text-gray-800 text-3xl font-bold">Reserva Confirmada</h1>
+        <h1 className="text-gray-800 text-3xl font-bold">Reservation Confirmed</h1>
         <p className="text-gray-800 mt-2">
-        Aquí están los detalles de tu reserva. ¡Gracias por confiar en nosotros!
+        Here are your reservation details. Thank you for trusting us!
         </p>
     </header>
 
     <section className="bg-white rounded-lg shadow p-6 text-left w-full max-w-md">
-        <h2 className="text-gray-800 text-lg font-medium mb-4">Detalles de la Reserva</h2>
+        <h2 className="text-gray-800 text-lg font-medium mb-4">Reservation Details</h2>
         <div className="text-gray-800 mb-4">
-        <p><strong>Nombre Completo:</strong> {name}</p>
+        <p><strong>Full Name:</strong> {name}</p>
         </div>
         <div className="text-gray-800 mb-4">
-        <p><strong>Correo Electrónico:</strong> {email}</p>
+        <p><strong>Email:</strong> {email}</p>
         </div>
         <div className="text-gray-800 mb-4">
-        <p><strong>Fecha de Reserva:</strong> {date}</p>
+        <p><strong>Reservation Date:</strong> {date}</p>
         </div>
         <button
         className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 w-full"
         onClick={() => router.push('/')}
         >
-        Volver a la página principal
+        Return to the main page
         </button>
     </section>
     </main>
 );
 }
+
 
 
 
